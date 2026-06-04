@@ -1,4 +1,4 @@
-.{
+*{
     box-sizing: border-box;
 }
 h3{
@@ -30,22 +30,26 @@ h3{
     border-radius: 10px;
     background-color: #F5F5F5;
 }
-button{
-    background-color: #EAE0CF;
-    width: 97px;
-    height: 97px;
-    border-radius: 10px;
-    padding: 4px;
-}
 .input{
     width: 98%;
     height: 78%;
     border: 1px solid black;
     border-radius: 10px;
-    
-    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2px;
+    justify-content: space-evenly;
 }
 
-button.num{
-    
+button{
+    background-color: #EAE0CF;
+    width: 85px;
+    height: 85px;
+    border-radius: 10px;
+    padding: 4px;
+    padding: 4px;
+    /*display: flexbox;
+    align-items: center;
+    justify-content: flex-start;*/
 }

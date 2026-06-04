@@ -2,33 +2,29 @@ const num = document.querySelectorAll(".num");
 const optr = document.querySelectorAll(".optr");
 const display = document.querySelector(".display")
 
-let getFirstNum =num.forEach(num => {
+let Num =[];
+
+num.forEach(num => {
   num.addEventListener("click", (event) => {
     const value = event.target.textContent;
     display.textContent = value;
+    Num.push(value);
     
     
+  console.log(Num);
   })
 });
-let Exp;
+
+let Exp=0;
 let getExpn = optr.forEach(optr => {
   optr.addEventListener("click", (e) => {
     const exp = e.target.textContent;
     Exp = exp;
     
+  console.log(Exp);
   })
 });
 
-console.log(Exp);
-let getLasttNum = num.forEach(num => {
-  num.addEventListener("click", (event) => {
-    const value = event.target.textContent;
-    display.textContent = value;
-    
-    
-  })
-});
 
-console.log(getFirstNum);
-console.log(getLasttNum);
-console.log(getExpn);
+display.textContent = num[0] + Exp + num[1];
+
